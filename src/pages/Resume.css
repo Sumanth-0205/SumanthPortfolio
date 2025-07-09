@@ -1,0 +1,48 @@
+.resume-container {
+  background: linear-gradient(to right, #6a0572, #ff6f61);
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+  color: #fff3e0;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.dark .resume-container {
+  background-color: #121212;
+  color: #fefefe;
+}
+
+.resume-frame {
+  width: 80%;
+  height: 600px;
+  border: 3px solid #ffe600;
+  border-radius: 10px;
+  background-color: #fff3e0;
+  margin-top: 1rem;
+}
+
+body.dark .resume-frame {
+  background-color: #2a2a2a;
+  border-color: #ffe600;
+}
+
+.download-btn {
+  background-color: #ffe600;
+  color: #6a0572;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 1.5rem;
+  margin-top: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #ffd000;
+}
+
+body.dark .download-btn {
+  background-color: #ffe600;
+  color: #121212;
+}

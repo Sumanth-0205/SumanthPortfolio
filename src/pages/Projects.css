@@ -1,0 +1,95 @@
+.projects {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  padding: 2rem;
+  color: #3e3e3e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+body.dark .projects {
+  background-color: #1e1e1e;
+  color: #fefefe;
+}
+
+/* Grid layout */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Card styling */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  background: linear-gradient(to bottom right, #ffe0e0, #ffd6c2);
+  border: 2px solid #ff6f61;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 420px;
+  box-sizing: border-box;
+}
+
+body.dark .project-card {
+  background: #2a2a2a;
+  border-color: #ff6f61;
+  color: #e0e0e0;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography */
+.project-card h3 {
+  color: #6a0572;
+  margin-bottom: 0.5rem;
+}
+
+body.dark .project-card h3 {
+  color: #ffe600;
+}
+
+.project-card p {
+  flex-grow: 1;
+}
+
+.tech {
+  font-size: 0.85rem;
+  color: #444;
+  margin-top: 1rem;
+}
+
+body.dark .tech {
+  color: #ccc;
+}
+
+/* Link */
+.project-card a {
+  align-self: center;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #ff6f61;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+  background-color: #d84343;
+}

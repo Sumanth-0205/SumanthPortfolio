@@ -1,0 +1,70 @@
+/* Home section (light mode) */
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to right, #6a0572, #ff6f61);
+  color: #fff3e0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* Home section (dark mode) */
+body.dark .home {
+  background: #000 !important;
+  color: #fefefe;
+}
+
+/* Text overrides for dark mode */
+body.dark .home h1,
+body.dark .home p {
+  color: #fefefe;
+}
+
+/* Profile image styling */
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #ffe600;
+}
+
+body.dark .profile-pic {
+  border-color: #ffe600;
+}
+
+/* Intro container */
+.intro {
+  text-align: center;
+  max-width: 600px;
+}
+
+/* Optional: force dark background inside intro box */
+body.dark .intro {
+  background-color: #000 !important;
+}
+
+/* Social links */
+.social-links {
+  margin-top: 1rem;
+}
+
+.social-links a {
+  margin-right: 1rem;
+  color: #ffe600;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+}
+
+body.dark .social-links a {
+  color: #ffe600;
+}
