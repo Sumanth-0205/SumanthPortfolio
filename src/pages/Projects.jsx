@@ -32,7 +32,7 @@ function Projects() {
 
   return (
     <section className="projects">
-      <h2>Projects</h2>
+      <h2> Personal Projects</h2>
       <div className="project-grid">
       {projects.map((proj, index) => (
   <motion.div
