@@ -86,3 +86,31 @@ body.dark .resume-link {
 .theme-toggle {
   margin-right: 1rem;
 }
+
+
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-left ul,
+  .navbar-right ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .navbar-right {
+    margin-right: 0;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .resume-link,
+  .theme-toggle {
+    margin-right: 0;
+    width: 100%;
+  }
+}
